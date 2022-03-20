@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal professional portfolio of Jesse Dalton.",
+  "main": "app.js",
+  "scripts": {
+    "sass": "sass styles/sass/main.scss styles/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmdalton0/portfolio.git"
+  },
+  "author": "Jesse Dalton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmdalton0/portfolio/issues"
+  },
+  "homepage": "https://github.com/jmdalton0/portfolio#readme",
+  "dependencies": {
+    "sass": "^1.49.8"
+  }
+}
