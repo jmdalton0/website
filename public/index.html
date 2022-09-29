@@ -3,18 +3,18 @@
 	<head>
 		<title>Jesse Dalton</title>
 		<script type="text/javascript" src="../js/main.js"></script>
-		<script src="https://kit.fontawesome.com/a393abf04a.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="../styles/css/style.css">
+		<link rel="stylesheet" href="../styles/reset.css">
+		<link rel="stylesheet" href="../styles/index.css">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 	</head>	
 
 	<body>
 		<header> 
-			<section>
+			<section class="flex-row space-between">
 				<h3>Jesse Dalton</h3>
-				<nav>
-					<ul>
+				<nav class="align-center">
+					<ul class="flex-row align-center space-x-1-5">
 						<li>
 							<a href="#projects">Projects</a>
 						</li>
@@ -30,14 +30,41 @@
 		</header>
 
 		<main>
-			<section>
+			<section id="hero" class="text-white">
 				<h1>I'm Jesse<br>Check Out What I've Coded</h1>
+			</section>
+
+			<section id="wello">
+				<div class="flex-row">
+					<div class="flex-col justify-center">
+						<h2>Wello</h2>
+						<h4>To-do list web app</h4>
+						<p>Built in Java</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="other" class="bg-prim">
+				<div class="flex-row">
+					<div class="flex-col justify-center align-end">
+						<h2>Something Else</h2>
+						<h4>Hopefully</h4>
+						<p>We'll see</p>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact">
+				<div class="flex-col justify-center align-center">
+					<h2>Feel Free to Reach Out</h2>
+					<a href="/contact" class="btn">Contact Me</a>
+				</div>
 			</section>
 		</main>
 
 		<footer>
 			<section>
-				<h4>Jesse Dalton</h5>
+				<h3>Jesse Dalton</h5>
 				<a href="tel:702-937-1365">702-937-1365</p>
 				<a href="mailto:jmdalton0@gmail.com">jmdalton0@gmail.com</p>
 			</section>

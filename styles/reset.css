@@ -1,33 +1,168 @@
+/* reset */
+
 :root {
     --black: #040404;
     --white: #fefefe;
+	--prim: #1A7D91;
+
+	--hero-height: 32rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+}
+
+body {
+	height: 100vh;
 }
 
 h1 {
-	font-size: 3rem;
+	font-size: 3em;
+	margin-bottom: 1rem;
 }
 
 h2 {
-	font-size: 2.5rem;
+	font-size: 2.5em;
+	margin-bottom: 0.5rem;
 }
 
 h3 {
-	font-size: 2rem;
+	font-size: 2em;
+	margin-bottom: 0.2rem;
 }
 
 h4 {
-	font-size: 1.2rem;
+	font-size: 1.2em;
+	margin-bottom: 0.2rem;
 }
 
 h5 {
-	font-size: 1rem;
+	font-size: 1em;
+	margin-bottom: 0.2rem;
 }
 
 h6 {
-	font-size: 0.8rem;
+	font-size: 0.8em;
+	margin-bottom: 0.2rem;
 }
 
 p {
-	font-size: 1rem;
+	font-size: 1em;
 }
 
+a {
+	text-decoration: none;
+	color: unset;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex: 1;
+}
+
+header {
+	box-shadow: 0 0 9px 3px rgba(41, 41, 41, 0.25);
+}
+
+footer {
+	padding: 3rem 0 8rem 0;
+	color: var(--white);
+	background-color: var(--black);
+}
+
+section {
+	padding: 2rem calc(1rem + 15%);
+}
+
+/* layout */
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+.justify-center {
+	display: flex;
+	justify-content: center;
+}
+
+.align-center {
+	display: flex;
+	align-items: center;
+}
+
+.align-end {
+	display: flex;
+	align-items: flex-end;
+}
+
+.space-between {
+	display: flex;
+	justify-content: space-between;
+}
+
+.space-x-1 > *:not(:first-child):not(:last-child) {
+	margin: 0 1rem;
+}
+
+.space-x-1-5 > *:not(:first-child):not(:last-child) {
+	margin: 0 1.5rem;
+}
+
+.btn {
+	padding: 1.2rem 7rem;
+	font-size: 22px;
+	transition: all 0.2s ease;
+}
+
+/* colors */
+
+.text-white {
+	color: var(--white);
+}
+
+.bg-prim {
+	background: var(--prim);
+}
+
+/* buttons */
+.btn {
+	border: 5px solid var(--black);
+}
+
+.btn:hover {
+	background-color: var(--black);
+	color: var(--white);
+}
+
+.bg-prim .btn:hover {
+	color: var(--prim);
+}
