@@ -26,7 +26,7 @@ body {
 }
 
 h1 {
-	font-size: 3rem;
+	font-size: 4rem;
 	margin-bottom: 1rem;
 }
 
@@ -86,7 +86,7 @@ body {
 
 main {
 	flex: 1;
-	margin-top: 7rem;
+	margin-top: 6rem;
 }
 
 header {
@@ -148,6 +148,10 @@ section {
 
 .space-x-3 > *:not(:last-child) {
 	margin-right: 3rem;
+}
+
+.m-0 {
+	margin: 0;
 }
 
 .btn {
