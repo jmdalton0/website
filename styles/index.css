@@ -1,5 +1,5 @@
 #hero {
-    height: var(--hero-height);
+    height: 32rem;
     background-image: url('../assets/mountain1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,18 +12,17 @@
 }
 
 #featured-1 {
-    height: var(--hero-height);
+    height: 26rem;
 }
 
 #featured-2 {
-    height: var(--hero-height);
+    height: 26rem;
+}
+
+#contact {
+    height: 26rem;
 }
 
 #contact h2 {
-    margin-top: 5rem;
     margin-bottom: 2rem;
-}
-
-#contact .btn {
-    margin-bottom: 5rem;
 }
