@@ -1,6 +1,6 @@
 #hero {
     height: 32rem;
-    background-image: url('../assets/mountain1.jpg');
+    background-image: url('../images/mountain1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
