@@ -6,4 +6,4 @@ Personal Professional Portfolio
 ## Contact
 [jmdalton0@gmail.com](mailto:jmdalton0@gmail.com)
 
-[702-937-1365](tel:702-937-1365)
+<a href="tel:7029371365">(702) 937-1365</a>
