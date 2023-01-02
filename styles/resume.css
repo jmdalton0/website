@@ -9,8 +9,6 @@ html {
     --grey: #f4f4f4;
     --text: #000;
 
-    --gutter: 25vw;
-
     font-size: 12px;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--text);
@@ -80,7 +78,7 @@ li {
 }
 
 header {
-    padding: 1rem var(--gutter);
+    padding: 1rem;
     background-color: var(--prim);
     color: #fff;
 }
@@ -108,12 +106,10 @@ section {
 }
 
 #sidebar {
-    padding-left: var(--gutter);
-    padding-right: 1rem;
+    padding: 0 1rem;
     background-color: var(--grey);
 }
 
 #content {
-    padding-left: 1rem;
-    padding-right: var(--gutter);
+    padding: 0 1rem;
 }

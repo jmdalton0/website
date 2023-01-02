@@ -11,10 +11,10 @@ curl --request POST \
             "printBackground": true
         },
         "source": {
-            "url": "https://yakpdf.github.io/examples/invoice/invoice"
+            "url": "https://jessedalton.com/pages/resume/resume-general.html"
         },
         "wait": {
             "for": "navigation", "timeout": 1000, "waitUntil": "load"
         }
-  }' > testInvoice.pdf
+  }' > ../pages/resume/resume.pdf
 
