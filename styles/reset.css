@@ -58,6 +58,7 @@ p {
 }
 
 a {
+	font-size: 1em;
 	text-decoration: none;
 	color: unset;
 	transition: color 0.2s ease;
@@ -147,6 +148,7 @@ section {
 .space-between {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .space-x-2 > *:not(:last-child) {
@@ -161,12 +163,6 @@ section {
 	margin: 0;
 }
 
-.btn {
-	padding: 1.2rem 7rem;
-	font-size: 22px;
-	transition: all 0.2s ease;
-}
-
 .thumbnail {
 	max-height: 100%;
 }
@@ -177,11 +173,6 @@ section {
 }
 
 /* colors */
-
-.text-white {
-	color: var(--white);
-}
-
 .bg-white {
 	background: var(--white);
 	color: var(--black);
@@ -192,9 +183,22 @@ section {
 	color: var(--white);
 }
 
+.bg-image {
+	color: var(--white);
+}
+
 /* buttons */
 .btn {
+	display: inline-block;
+	font-size: 22px;
+	padding: 1.2rem 7rem;
 	border: 5px solid var(--black);
+	transition: all 0.2s ease;
+}
+
+.btn-small {
+	font-size: 1em;
+	padding: 0.5rem 3rem;
 }
 
 .btn:hover {

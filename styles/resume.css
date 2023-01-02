@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    --prim: #576d7b;
+    --grey: #f4f4f4;
+    --text: #000;
+
+    --gutter: 25vw;
+
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: var(--prim);
+    width: 100%;
+    margin-bottom: 0.4rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+h6 {
+    font-size: 0.8rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+i {
+    color: var(--prim);
+    margin-right: 0.6rem;
+}
+
+ul {
+    margin-left: 2rem;
+}
+
+li {
+    line-height: 1.5rem;
+}
+
+header {
+    padding: 1rem var(--gutter);
+    background-color: var(--prim);
+    color: #fff;
+}
+
+main {
+    display: flex;
+    height: 100%;
+}
+
+section {
+    padding-top: 1rem;
+}
+
+.subsection {
+    padding-bottom: 1rem;
+}
+
+.subsection:last-child {
+    padding-bottom: 0;
+}
+
+.icon-item {
+    display: flex;
+    padding: 0.2rem;
+}
+
+#sidebar {
+    padding-left: var(--gutter);
+    padding-right: 1rem;
+    background-color: var(--grey);
+}
+
+#content {
+    padding-left: 1rem;
+    padding-right: var(--gutter);
+}
