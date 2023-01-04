@@ -17,10 +17,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-body {
-	height: 100vh;
-}
-
 h1 {
 	font-size: 4rem;
 	margin-bottom: 1rem;
@@ -74,6 +70,7 @@ a:hover img {
 
 li {
 	list-style: none;
+	line-height: 1.5em;
 }
 
 img {
@@ -87,26 +84,26 @@ body {
 
 main {
 	flex: 1;
-	margin-top: 6rem;
 }
 
 header {
-	position: fixed;
+	position: sticky;
 	top: 0;
 	width: 100%;
 	min-height: 6rem;
-	padding: 2rem calc(1rem + 15%);
+	padding: 1rem calc(1rem + 15%);
 	box-shadow: 0 0 9px 3px rgba(41, 41, 41, 0.25);
 }
 
 footer {
-	padding: 3rem calc(1rem + 15%) 8rem calc(1rem + 15%);
+	padding: 3rem calc(1rem + 15%) 10rem calc(1rem + 15%);
 	color: var(--white);
 	background-color: var(--black);
 }
 
 section {
-	padding: 2rem calc(1rem + 15%);
+	min-height: 20rem;
+	padding: 6rem calc(1rem + 15%);
 }
 
 /* layout */
@@ -151,6 +148,10 @@ section {
 	align-items: center;
 }
 
+.space-x-1 > *:not(:last-child) {
+	margin-right: 1rem;
+}
+
 .space-x-2 > *:not(:last-child) {
 	margin-right: 2rem;
 }
@@ -159,20 +160,33 @@ section {
 	margin-right: 3rem;
 }
 
+.space-y-2 > *:not(:last-child) {
+	margin-bottom: 2rem;
+}
+
 .m-0 {
 	margin: 0;
 }
 
-.thumbnail {
-	max-height: 100%;
-}
-
 .thumbnail img {
-	max-height: 100%;
+	max-height: 16rem;
 	object-fit: contain;
 }
 
-/* colors */
+.bg-image {
+    height: 32rem;
+	padding-top: 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+	background-color: var(--prim);
+	color: var(--white);
+}
+
+.bg-image h1 {
+    margin-top: 2rem;
+}
+
 .bg-white {
 	background: var(--white);
 	color: var(--black);
@@ -183,14 +197,14 @@ section {
 	color: var(--white);
 }
 
-.bg-image {
-	color: var(--white);
-}
-
 /* buttons */
 .btn {
-	display: inline-block;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	font-size: 22px;
+	margin: 0;
 	padding: 1rem 4rem;
 	border: 4px solid var(--black);
 	transition: all 0.2s ease;
@@ -206,36 +220,31 @@ section {
 	color: var(--white);
 }
 
-.bg-prim .btn:hover {
-	color: var(--prim);
+.btn-disabled:hover {
+	background-color: unset;
+	color: unset;
+}
+
+/* lists */
+ul.bulleted li {
+	list-style-type: disc;
 }
 
 /* pages */
-#hero {
-    height: 32rem;
-    background-image: url('../images/mountain1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+#index-hero {
+	color: var(--white);
+    background-image: url('../images/index-hero.jpg');
     background-position: 0 5rem;
 }
 
-#hero h1 {
-    margin-top: 2rem;
+#projects-hero {
+	color: var(--black);
+    background-image: url('../images/projects-hero.jpg');
+    background-position: 0 0;
 }
 
-#featured-1 {
-    height: 26rem;
-}
-
-#featured-2 {
-    height: 26rem;
-}
-
-#contact {
-    height: 26rem;
-}
-
-#contact h2 {
-    margin-bottom: 2rem;
+#experience-hero {
+	color: var(--black);
+    background-image: url('../images/experience-hero.jpg');
+    background-position: 0 0;
 }

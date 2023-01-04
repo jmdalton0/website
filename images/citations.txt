@@ -1,3 +1,8 @@
-mountain0.jpg:
-mountain1.jpg:
+index-hero:
 Photo by <a href="https://unsplash.com/@aheibammeetei?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aheibam Meetei</a> on <a href="https://unsplash.com/s/photos/glacier?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+projects-hero:
+Photo by <a href="https://unsplash.com/@z734923105?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jerry Zhang</a> on <a href="https://unsplash.com/images/nature/mountain?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+experience-hero:
+Photo by <a href="https://unsplash.com/@sepoys?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rohit Tandon</a> on <a href="https://unsplash.com/images/nature/mountain?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
