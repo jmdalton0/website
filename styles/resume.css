@@ -9,7 +9,7 @@ html {
     --grey: #f4f4f4;
     --text: #000;
 
-    font-size: 12px;
+    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--text);
 }
@@ -84,7 +84,7 @@ main {
 }
 
 section {
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 .subsection {
