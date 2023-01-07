@@ -64,10 +64,6 @@ a:hover {
 	color: var(--prim-light);
 }
 
-a:hover img {
-	opacity: 0.8;
-}
-
 li {
 	list-style: none;
 	line-height: 1.5em;
@@ -80,6 +76,7 @@ img {
 body {
 	display: flex;
 	flex-direction: column;
+	height: 100vh;
 }
 
 main {
@@ -168,9 +165,8 @@ section {
 	margin: 0;
 }
 
-.thumbnail img {
-	max-height: 16rem;
-	object-fit: contain;
+.mt-2 {
+	margin-top: 2rem;
 }
 
 .bg-image {
@@ -195,6 +191,65 @@ section {
 .bg-prim {
 	background: var(--prim);
 	color: var(--white);
+}
+
+.thumbnail {
+	transition: transform 0.2s ease;
+}
+
+.thumbnail:hover {
+	transform: scale(1.1);
+}
+
+.thumbnail img {
+	max-height: 16rem;
+	object-fit: contain;
+}
+
+.card {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 14rem;
+	height: 14rem;
+	padding: 2rem;
+	border-radius: 20px;
+	color: var(--prim-light);
+	background-color: var(--white);
+	overflow: hidden;
+	transition: all 0.2s ease;
+}
+
+.card:hover {
+	transform: scale(1.1);
+}
+
+.card:after {
+	content: "VIEW";
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	font-size: 2em;
+	transition: all 0.2s ease;
+	color: transparent;
+	background-color: transparent;
+}
+
+.card:hover:after {
+	color: var(--white);
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.card img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
 }
 
 /* buttons */
